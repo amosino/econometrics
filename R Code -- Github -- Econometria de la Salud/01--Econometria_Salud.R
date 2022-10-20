@@ -10,9 +10,9 @@ library(Hmisc)
 
 # Leer datos (de internet)
 
-dweb <- paste0("https://raw.githubusercontent.com/amosino/",
-               "/courses--econometria/master/",
-               "econometria_salud/econometria_salud--datos/CancerData_P1.csv")
+dweb <- paste0("https://raw.githubusercontent.com/amosino/econometrics/main",
+               "/R%20Code%20--%20Github%20--%20Econometria%20de%20la%20Salud",
+               "/Datos/CancerData_P1.csv")
 
 db <- read_csv(dweb)
 

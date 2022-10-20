@@ -10,16 +10,16 @@ library(gapminder)
 
 # gather
 
-dps <- read_csv(paste0("https://raw.githubusercontent.com/amosino/",
-                       "/courses--econometria/master/",
-                       "econometria_salud/econometria_salud--datos/DeptsData.csv"))
+dps <- read_csv(paste0("https://raw.githubusercontent.com/amosino/econometrics/main",
+                       "/R%20Code%20--%20Github%20--%20Econometria%20de%20la%20Salud",
+                       "/Datos/DeptsData.csv"))
 dps_gather <- gather(dps, key="Year", value="Grad", -id)
 
 # spread
 
-wrm <- read_csv(paste0("https://raw.githubusercontent.com/amosino/",
-               "/courses--econometria/master/",
-               "econometria_salud/econometria_salud--datos/WormsData.csv"))
+wrm <- read_csv(paste0("https://raw.githubusercontent.com/amosino/econometrics/main",
+                       "/R%20Code%20--%20Github%20--%20Econometria%20de%20la%20Salud",
+                       "/Datos/WormsData.csv"))
 wrm_spread <- spread(wrm, key="feature", value="measure")
 
 

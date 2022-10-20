@@ -10,9 +10,9 @@ library(MASS)
 
 # Leer datos (de internet)
 
-dweb <- paste0("https://raw.githubusercontent.com/amosino/",
-               "/courses--econometria/master/",
-               "econometria_salud/econometria_salud--datos/MEPSData.csv")
+dweb <- paste0("https://raw.githubusercontent.com/amosino/econometrics/main",
+               "/R%20Code%20--%20Github%20--%20Econometria%20de%20la%20Salud",
+               "/Datos/MEPSData.csv")
 db <- read_csv(dweb)
 
 # Variables dummy 
